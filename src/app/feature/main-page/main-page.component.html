@@ -1,0 +1,28 @@
+<!-- <div id="foodBox" *ngFor="let recipe of recipes">
+    {{recipe.name}}
+    <img [src]="recipe.imagePath[0]" width="300px">
+    <img [src]="recipe.imagePath[1]" width="300px">
+    <img [src]="recipe.imagePath[2]" width="300px">
+  </div> -->
+
+<ng-container *ngFor="let category of categories">
+  <div>
+    {{category}}
+  </div>
+  <div id="boxForOneCategory">
+    <ng-container *ngFor="let cat of recipes">
+      <ng-container *ngIf="cat.category === category">
+        <div id="boxForOneRecipe">
+          <nav (click)="navigateToRecipe(cat)" id="buttonForNavOneRecipe">
+            <p>{{cat.name}}</p>
+            <p>{{cat.shortDescr}}</p>
+            <img src="{{cat.imagePath[0]}}">
+          </nav>
+          
+          <button >Kedvencek közé</button>
+          <button >Törlés kedvencek közül</button>
+        </div>
+      </ng-container>
+    </ng-container>
+  </div>
+</ng-container>

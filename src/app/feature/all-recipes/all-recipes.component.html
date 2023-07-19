@@ -1,0 +1,12 @@
+
+Keresés: <input type="text" [(ngModel)]="searchedString" (ngModelChange)="searching($event)" >
+
+<p id="message">{{message}}</p>
+
+<div *ngFor="let recipe of displayedRecipes">
+    <p>{{recipe.name}}</p>
+    <p>{{recipe.shortDescr}}</p>
+    <img src="{{recipe.imagePath[0]}}">
+    <button>Kedvencek közé</button>
+    <button>Törlés kedvencek közül</button>
+</div>

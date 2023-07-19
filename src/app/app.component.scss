@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}                                         /* ez nem működik!!! */
+
+nav a {
+    padding: 1rem;
+}
+
+footer {
+    height: 100px;
+    background-color: black;
+    color: white;
+}

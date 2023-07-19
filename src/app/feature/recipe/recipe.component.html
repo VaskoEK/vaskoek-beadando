@@ -1,0 +1,19 @@
+
+<div *ngIf="recipe" id="divForRecipe">
+
+    <p>{{recipe.name}}</p>
+    <p>{{recipe.longDescr}}</p>
+    <img src="{{recipe.imagePath[0]}}">
+
+    <div id="container">
+        <!-- <button id="left" (click)="leftButtonClicked()">Left</button> -->
+        <div style="height: 300px; width: 500px; border: 1px solid black" [style]="{'background-image': 'url({{recipe.imagePath[0]}})'}"></div>
+        <!-- <button id="right" (click)="rightButtonClicked()">Right</button> -->
+      </div>
+
+    <p class="label">Hozzávalók:</p>
+    <div *ngFor="let ingredient of recipe.ingredients">{{ingredient}}</div>
+    <p class="label">Elkészítés:</p>
+    <div *ngFor="let direction of recipe.directions">{{direction}}</div>
+
+</div>
