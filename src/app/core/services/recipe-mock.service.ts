@@ -16,10 +16,10 @@ export class RecipeMockService {
       {
         name: "Alap sonkás bableves",
         id: 1,
-        category: "leves",
-        imagePath: ["../../../assets/soups/Alap_sonkas_bableves1.JPG", "../../../assets/soups/Alap_sonkas_bableves2.JPG", "../../../assets/soups/Alap_sonkas_bableves3.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Leves",
+        imagePaths: ["../../../assets/soups/Alap_sonkas_bableves1.JPG", "../../../assets/soups/Alap_sonkas_bableves2.JPG", "../../../assets/soups/Alap_sonkas_bableves3.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "8 csésze víz", "1 font száraz északi bab, szétválogatva és leöblítve", "½ teáskanál só", "1 csésze apróra vágott sárgarépa", "1 csésze apróra vágott hagyma", "½ szár zeller, apróra vágva", "1 teáskanál darált fokhagyma", "1 teáskanál mustárpor", "2 babérlevél", "1 sonkacsánk", "2 csésze apróra vágott sonka", "½ teáskanál őrölt fehér bors"
         ],
@@ -32,10 +32,10 @@ export class RecipeMockService {
       {
         name: "Sült brokkoli leves",
         id: 2,
-        category: "leves",
-        imagePath: ["../../../assets/soups/Sult_brokkoli_leves.JPG", "../../../assets/soups/Sult_brokkoli_leves.JPG", "../../../assets/soups/Sult_brokkoli_leves.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Leves",
+        imagePaths: ["../../../assets/soups/Sult_brokkoli_leves.JPG", "../../../assets/soups/Sult_brokkoli_leves.JPG", "../../../assets/soups/Sult_brokkoli_leves.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "5 csésze apróra vágott brokkolirózsa és -szár", "1 hagyma, 1 hüvelykes kockákra vágva", "3 gerezd fokhagyma, meghámozva",
           "2 evőkanál olívaolaj", "3 csésze zöldségleves", "4 uncia puha krémsajt", "¾ teáskanál citrombors", "őrölt pirospaprika pehely ízlés szerint"
@@ -50,10 +50,10 @@ export class RecipeMockService {
       {
         name: "Házi csirkehúsleves",
         id: 3,
-        category: "leves",
-        imagePath: ["../../../assets/soups/Hazi_csirkehusleves.JPG", "../../../assets/soups/Hazi_csirkehusleves.JPG", "../../../assets/soups/Hazi_csirkehusleves.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Leves",
+        imagePaths: ["../../../assets/soups/Hazi_csirkehusleves.JPG", "../../../assets/soups/Hazi_csirkehusleves.JPG", "../../../assets/soups/Hazi_csirkehusleves.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "1 (3 font) egész csirke", "4 sárgarépa, félbevágva", "4 szár zeller, félbevágva", "1 nagy hagyma, félbevágva", "só és bors ízlés szerint", "1 teáskanál csirke húsleves granulátum (opcionális)"
         ],
@@ -67,10 +67,10 @@ export class RecipeMockService {
       {
         name: "Lencseleves",
         id: 4,
-        category: "leves",
-        imagePath: ["../../../assets/soups/Lencseleves.JPG", "../../../assets/soups/Lencseleves.JPG", "../../../assets/soups/Lencseleves.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Leves",
+        imagePaths: ["../../../assets/soups/Lencseleves.JPG", "../../../assets/soups/Lencseleves.JPG", "../../../assets/soups/Lencseleves.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "¼ csésze olívaolaj", "1 hagyma, apróra vágva", "2 sárgarépa, kockára vágva", "2 szár zeller, apróra vágva", "2 gerezd fokhagyma, felaprítva", "1 babérlevél", "1 teáskanál szárított oregánó", "1 teáskanál szárított bazsalikom", "2 csésze száraz lencse", "8 csésze víz", "1 (14,5 uncia) doboz passzírozott paradicsom", "½ csésze spenót, leöblítve és vékonyra szeletelve", "2 evőkanál ecet", "só ízlés szerint", "őrölt fekete bors ízlés szerint"
         ],
@@ -85,10 +85,10 @@ export class RecipeMockService {
       {
         name: "Csirke tortilla leves",
         id: 5,
-        category: "leves",
-        imagePath: ["../../../assets/soups/Csirke_tortilla_leves.JPG", "../../../assets/soups/Csirke_tortilla_leves.JPG", "../../../assets/soups/Csirke_tortilla_leves.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Leves",
+        imagePaths: ["../../../assets/soups/Csirke_tortilla_leves.JPG", "../../../assets/soups/Csirke_tortilla_leves.JPG", "../../../assets/soups/Csirke_tortilla_leves.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "1 evőkanál olívaolaj", "1 közepes hagyma, apróra vágva", "3 gerezd fokhagyma, felaprítva", "1 (28 uncia) doboz passzírozott paradicsom", "1 (10,5 uncia) doboz sűrített csirkehúsleves", "1 ¼ csésze víz", "2 teáskanál chili por", "1 teáskanál szárított oregánó", "1 (15 uncia) doboz fekete bab, leöblítve és lecsepegtetve", "2 nagy kicsontozott csirkemell fél, megfőzve és falatnyi darabokra vágva", "1 csésze egész kukoricaszem, főzve", "1 csésze fehér kukoricakása", "1 (4 uncia) doboz apróra vágott zöld chili paprika", "¼ csésze apróra vágott friss koriander", "½ csésze tört tortilla chips, vagy ízlés szerint", "2 közepes avokádó, szeletelve, vagy ízlés szerint", "½ csésze aprított Monterey Jack sajt, vagy ízlés szerint", "2 evőkanál apróra vágott zöldhagyma, vagy ízlés szerint"
         ],
@@ -102,10 +102,10 @@ export class RecipeMockService {
       {
         name: "Taco leves",
         id: 6,
-        category: "leves",
-        imagePath: ["../../../assets/soups/Taco_leves.JPG", "../../../assets/soups/Taco_leves.JPG", "../../../assets/soups/Taco_leves.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Leves",
+        imagePaths: ["../../../assets/soups/Taco_leves.JPG", "../../../assets/soups/Taco_leves.JPG", "../../../assets/soups/Taco_leves.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "3 csésze csirkehúsleves, külön csészékben tárolva", "1 kis fej karfiol, apróra vágva", "1 evőkanál olívaolaj", "1 hagyma, finomra vágva", "1 (4 uncia) doboz kockára vágott jalapeno paprika", "1 kiló darált marhahús", "1 (8 uncia) csomag krémsajt, kockára vágva", "1 (26 uncia) doboz kockára vágott paradicsom", "1 teáskanál őrölt paprika", "só és őrölt fekete bors ízlés szerint"
         ],
@@ -118,10 +118,10 @@ export class RecipeMockService {
       {
         name: "Vegán Taco Chili",
         id: 7,
-        category: "leves",
-        imagePath: ["../../../assets/soups/Vegan_Taco_Chili.JPG", "../../../assets/soups/Vegan_Taco_Chili.JPG", "../../../assets/soups/Vegan_Taco_Chili.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Leves",
+        imagePaths: ["../../../assets/soups/Vegan_Taco_Chili.JPG", "../../../assets/soups/Vegan_Taco_Chili.JPG", "../../../assets/soups/Vegan_Taco_Chili.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "1 evőkanál olívaolaj", "1 font szeletelt friss gomba", "2 gerezd fokhagyma, felaprítva", "1 kis hagyma, apróra vágva", "2 szár zeller, apróra vágva", "1 (29 uncia) doboz paradicsomszósz", "1 (6 uncia) doboz paradicsompüré", "3 (15 uncia) doboz vesebab", "1 (11 uncia) doboz mexikói stílusú kukorica"
         ],
@@ -133,10 +133,10 @@ export class RecipeMockService {
       {
         name: "Édesburgonya leves",
         id: 8,
-        category: "leves",
-        imagePath: ["../../../assets/soups/Edesburgonya_leves.JPG", "../../../assets/soups/Edesburgonya_leves.JPG", "../../../assets/soups/Edesburgonya_leves.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Leves",
+        imagePaths: ["../../../assets/soups/Edesburgonya_leves.JPG", "../../../assets/soups/Edesburgonya_leves.JPG", "../../../assets/soups/Edesburgonya_leves.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "6 közepes édesburgonya, meghámozva és apróra vágva", "1 evőkanál darált friss gyömbér", "2 csésze csirke- vagy zöldségalaplé", "1 csésze víz, vagy szükség szerint", "1 lime leve", "2 csésze tej vagy tejszín, vagy szükség szerint"
         ],
@@ -148,10 +148,10 @@ export class RecipeMockService {
       {
         name: "Mangó Gazpacho",
         id: 9,
-        category: "leves",
-        imagePath: ["../../../assets/soups/Mango_Gazpacho.JPG", "../../../assets/soups/Mango_Gazpacho.JPG", "../../../assets/soups/Mango_Gazpacho.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Leves",
+        imagePaths: ["../../../assets/soups/Mango_Gazpacho.JPG", "../../../assets/soups/Mango_Gazpacho.JPG", "../../../assets/soups/Mango_Gazpacho.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "2 csésze 1/4 hüvelykes kockára vágott friss mangó", "2 csésze narancslé", "2 evőkanál extra szűz olívaolaj", "1 mag nélküli uborka, 1/4 hüvelykes kockákra vágva", "1 kis piros kaliforniai paprika, kimagozva és 1/4 hüvelykes kockákra vágva", "1 kis hagyma, 1/4 hüvelykes kockákra vágva", "2 gerezd közepes fokhagyma, darálva", "1 kis jalapeno paprika, kimagozva és darálva (opcionális)", "3 evőkanál friss limelé", "2 evőkanál apróra vágott friss petrezselyem, bazsalikom vagy koriander", "só és frissen őrölt fekete bors"
         ],
@@ -162,10 +162,10 @@ export class RecipeMockService {
       {
         name: "Kanadai sárgaborsóleves sonkával",
         id: 10,
-        category: "leves",
-        imagePath: ["../../../assets/soups/Kanadai_sargaborsoleves_sonkaval.JPG", "../../../assets/soups/Kanadai_sargaborsoleves_sonkaval.JPG", "../../../assets/soups/Kanadai_sargaborsoleves_sonkaval.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Leves",
+        imagePaths: ["../../../assets/soups/Kanadai_sargaborsoleves_sonkaval.JPG", "../../../assets/soups/Kanadai_sargaborsoleves_sonkaval.JPG", "../../../assets/soups/Kanadai_sargaborsoleves_sonkaval.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "1 sonkacsont egy kis hússal", "2 és fél csésze sárga hasított borsó", "5 szál zeller, felkockázva", "4 sárgarépa, kockára vágva", "½ nagy spanyol hagyma, kockára vágva", "2 evőkanál só", "2 teáskanál szárított kakukkfű", "1 babérlevél (opcionális)", "1 csipet őrölt fekete bors", "8 csésze víz, vagy szükség szerint"
         ],
@@ -180,10 +180,10 @@ export class RecipeMockService {
       {
         name: "Banánkenyér",
         id: 11,
-        category: "desszert",
-        imagePath: ["../../../assets/desserts/Banankenyer1.JPG", "../../../assets/desserts/Banankenyer2.JPG", "../../../assets/desserts/Banankenyer3.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Desszert",
+        imagePaths: ["../../../assets/desserts/Banankenyer1.JPG", "../../../assets/desserts/Banankenyer2.JPG", "../../../assets/desserts/Banankenyer3.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "2 csésze univerzális liszt",
           "1 teáskanál szódabikarbóna",
@@ -202,10 +202,10 @@ export class RecipeMockService {
       {
         name: "Juharsüti",
         id: 12,
-        category: "desszert",
-        imagePath: ["../../../assets/desserts/Juharsuti.JPG", "../../../assets/desserts/Juharsuti.JPG", "../../../assets/desserts/Juharsuti.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Desszert",
+        imagePaths: ["../../../assets/desserts/Juharsuti.JPG", "../../../assets/desserts/Juharsuti.JPG", "../../../assets/desserts/Juharsuti.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "1 csésze juharszirup",
           "5 evőkanál margarin",
@@ -228,10 +228,10 @@ export class RecipeMockService {
       {
         name: "PHILADELPHIA klasszikus sajttorta",
         id: 13,
-        category: "desszert",
-        imagePath: ["../../../assets/desserts/PHILADELPHIA_klasszikus_sajttorta.JPG", "../../../assets/desserts/PHILADELPHIA_klasszikus_sajttorta.JPG", "../../../assets/desserts/PHILADELPHIA_klasszikus_sajttorta.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Desszert",
+        imagePaths: ["../../../assets/desserts/PHILADELPHIA_klasszikus_sajttorta.JPG", "../../../assets/desserts/PHILADELPHIA_klasszikus_sajttorta.JPG", "../../../assets/desserts/PHILADELPHIA_klasszikus_sajttorta.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "1 ½ csésze HONEY MAID Graham Cracker Crumbs",
           "⅓ csésze vaj vagy margarin, olvasztott",
@@ -252,10 +252,10 @@ export class RecipeMockService {
       {
         name: "Mogyoróvajas tejszínhab",
         id: 14,
-        category: "desszert",
-        imagePath: ["../../../assets/desserts/Mogyorovajas_tejszinhab.JPG", "../../../assets/desserts/Mogyorovajas_tejszinhab.JPG", "../../../assets/desserts/Mogyorovajas_tejszinhab.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Desszert",
+        imagePaths: ["../../../assets/desserts/Mogyorovajas_tejszinhab.JPG", "../../../assets/desserts/Mogyorovajas_tejszinhab.JPG", "../../../assets/desserts/Mogyorovajas_tejszinhab.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "2 csésze kemény habtejszín",
           "1 csésze porcukor",
@@ -270,10 +270,10 @@ export class RecipeMockService {
       },{
         name: "Mogyoróvajas M&M süti",
         id: 15,
-        category: "desszert",
-        imagePath: ["../../../assets/desserts/Mogyorovajas_M&M_suti.JPG", "../../../assets/desserts/Mogyorovajas_M&M_suti.JPG", "../../../assets/desserts/Mogyorovajas_M&M_suti.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Desszert",
+        imagePaths: ["../../../assets/desserts/Mogyorovajas_M&M_suti.JPG", "../../../assets/desserts/Mogyorovajas_M&M_suti.JPG", "../../../assets/desserts/Mogyorovajas_M&M_suti.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "1 csésze krémes mogyoróvaj",
           "¾ csésze tömören adagolt barna cukor",
@@ -295,10 +295,10 @@ export class RecipeMockService {
       {
         name: "Tojáslikőr sodó",
         id: 16,
-        category: "desszert",
-        imagePath: ["../../../assets/desserts/Tojaslikor_sodo.JPG", "../../../assets/desserts/Tojaslikor_sodo.JPG", "../../../assets/desserts/Tojaslikor_sodo.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Desszert",
+        imagePaths: ["../../../assets/desserts/Tojaslikor_sodo.JPG", "../../../assets/desserts/Tojaslikor_sodo.JPG", "../../../assets/desserts/Tojaslikor_sodo.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "1 tojás, felvert",
           "1 csésze tojáslikőr",
@@ -314,10 +314,10 @@ export class RecipeMockService {
       {
         name: "Serpenyős epres palacsinta",
         id: 17,
-        category: "desszert",
-        imagePath: ["../../../assets/desserts/Serpenyos_epres_palacsinta.JPG", "../../../assets/desserts/Serpenyos_epres_palacsinta.JPG", "../../../assets/desserts/Serpenyos_epres_palacsinta.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Desszert",
+        imagePaths: ["../../../assets/desserts/Serpenyos_epres_palacsinta.JPG", "../../../assets/desserts/Serpenyos_epres_palacsinta.JPG", "../../../assets/desserts/Serpenyos_epres_palacsinta.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "3 nagy tojás",
           "¾ csésze teljes tej",
@@ -337,10 +337,10 @@ export class RecipeMockService {
       {
         name: "Old-Fashioned palacsinta",
         id: 18,
-        category: "desszert",
-        imagePath: ["../../../assets/desserts/Old-Fashioned_palacsinta.JPG", "../../../assets/desserts/Old-Fashioned_palacsinta.JPG", "../../../assets/desserts/Old-Fashioned_palacsinta.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Desszert",
+        imagePaths: ["../../../assets/desserts/Old-Fashioned_palacsinta.JPG", "../../../assets/desserts/Old-Fashioned_palacsinta.JPG", "../../../assets/desserts/Old-Fashioned_palacsinta.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "1 ½ csésze univerzális liszt",
           "3 ½ teáskanál sütőpor",
@@ -358,10 +358,10 @@ export class RecipeMockService {
       {
         name: "Mini palacsinta parfé",
         id: 19,
-        category: "desszert",
-        imagePath: ["../../../assets/desserts/Mini_palacsinta_parfe.JPG", "../../../assets/desserts/Mini_palacsinta_parfe.JPG", "../../../assets/desserts/Mini_palacsinta_parfe.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Desszert",
+        imagePaths: ["../../../assets/desserts/Mini_palacsinta_parfe.JPG", "../../../assets/desserts/Mini_palacsinta_parfe.JPG", "../../../assets/desserts/Mini_palacsinta_parfe.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "2/3 csésze vaníliás joghurt",
           "1 evőkanál lekvár vagy gyümölcsbefőtt",
@@ -376,10 +376,10 @@ export class RecipeMockService {
       {
         name: "Epres sajttorta üvegben",
         id: 20,
-        category: "desszert",
-        imagePath: ["../../../assets/desserts/Epres_sajttorta_uvegben.JPG", "../../../assets/desserts/Epres_sajttorta_uvegben.JPG", "../../../assets/desserts/Epres_sajttorta_uvegben.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Desszert",
+        imagePaths: ["../../../assets/desserts/Epres_sajttorta_uvegben.JPG", "../../../assets/desserts/Epres_sajttorta_uvegben.JPG", "../../../assets/desserts/Epres_sajttorta_uvegben.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "A kéreghez:",
           "1 ½ csésze graham kekszmorzsa",
@@ -404,10 +404,10 @@ export class RecipeMockService {
       {
         name: "Egészséges zöldlé",
         id: 21,
-        category: "ital",
-        imagePath: ["../../../assets/drinks/Egeszseges_zoldle1.JPG", "../../../assets/drinks/Egeszseges_zoldle2.JPG", "../../../assets/drinks/Egeszseges_zoldle3.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Ital",
+        imagePaths: ["../../../assets/drinks/Egeszseges_zoldle1.JPG", "../../../assets/drinks/Egeszseges_zoldle2.JPG", "../../../assets/drinks/Egeszseges_zoldle3.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "6 levél kelkáposzta",
           "4 szár zeller, levelei eltávolítva",
@@ -424,10 +424,10 @@ export class RecipeMockService {
       {
         name: "Old-Fashioned limonádé",
         id: 22,
-        category: "ital",
-        imagePath: ["../../../assets/drinks/Old-Fashioned_limonade.JPG", "../../../assets/drinks/Old-Fashioned_limonade.JPG", "../../../assets/drinks/Old-Fashioned_limonade.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Ital",
+        imagePaths: ["../../../assets/drinks/Old-Fashioned_limonade.JPG", "../../../assets/drinks/Old-Fashioned_limonade.JPG", "../../../assets/drinks/Old-Fashioned_limonade.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "6 db citrom",
           "1 csésze fehér cukor",
@@ -442,10 +442,10 @@ export class RecipeMockService {
       {
         name: "Brazil limonádé",
         id: 23,
-        category: "ital",
-        imagePath: ["../../../assets/drinks/Brazil_limonade.JPG", "../../../assets/drinks/Brazil_limonade.JPG", "../../../assets/drinks/Brazil_limonade.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Ital",
+        imagePaths: ["../../../assets/drinks/Brazil_limonade.JPG", "../../../assets/drinks/Brazil_limonade.JPG", "../../../assets/drinks/Brazil_limonade.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "2 db lime",
           "3 csésze víz",
@@ -461,10 +461,10 @@ export class RecipeMockService {
       {
         name: "Ananász Margarita",
         id: 24,
-        category: "ital",
-        imagePath: ["../../../assets/drinks/Ananasz_Margarita.JPG", "../../../assets/drinks/Ananasz_Margarita.JPG", "../../../assets/drinks/Ananasz_Margarita.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Ital",
+        imagePaths: ["../../../assets/drinks/Ananasz_Margarita.JPG", "../../../assets/drinks/Ananasz_Margarita.JPG", "../../../assets/drinks/Ananasz_Margarita.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "2 csésze jég",
           "3 folyékony uncia ananászlé",
@@ -484,10 +484,10 @@ export class RecipeMockService {
       {
         name: "Az IGAZI Long Island-i jeges tea",
         id: 25,
-        category: "ital",
-        imagePath: ["../../../assets/drinks/Az_IGAZI_Long_Island-i_jeges_tea.JPG", "../../../assets/drinks/Az_IGAZI_Long_Island-i_jeges_tea.JPG", "../../../assets/drinks/Az_IGAZI_Long_Island-i_jeges_tea.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Ital",
+        imagePaths: ["../../../assets/drinks/Az_IGAZI_Long_Island-i_jeges_tea.JPG", "../../../assets/drinks/Az_IGAZI_Long_Island-i_jeges_tea.JPG", "../../../assets/drinks/Az_IGAZI_Long_Island-i_jeges_tea.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "½ uncia vodka",
           "½ folyékony uncia rum",
@@ -506,10 +506,10 @@ export class RecipeMockService {
       {
         name: "Csokoládé krém Cold Brew",
         id: 26,
-        category: "ital",
-        imagePath: ["../../../assets/drinks/Csokolade_krem_Cold_Brew.JPG", "../../../assets/drinks/Csokolade_krem_Cold_Brew.JPG", "../../../assets/drinks/Csokolade_krem_Cold_Brew.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Ital",
+        imagePaths: ["../../../assets/drinks/Csokolade_krem_Cold_Brew.JPG", "../../../assets/drinks/Csokolade_krem_Cold_Brew.JPG", "../../../assets/drinks/Csokolade_krem_Cold_Brew.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "2 evőkanál tejszínhab",
           "1 evőkanál tej",
@@ -526,10 +526,10 @@ export class RecipeMockService {
       {
         name: "Pezsgő sárgadinnye Agua Fresca",
         id: 27,
-        category: "ital",
-        imagePath: ["../../../assets/drinks/Pezsgo_sargadinnye_Agua_Fresca.JPG", "../../../assets/drinks/Pezsgo_sargadinnye_Agua_Fresca.JPG", "../../../assets/drinks/Pezsgo_sargadinnye_Agua_Fresca.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Ital",
+        imagePaths: ["../../../assets/drinks/Pezsgo_sargadinnye_Agua_Fresca.JPG", "../../../assets/drinks/Pezsgo_sargadinnye_Agua_Fresca.JPG", "../../../assets/drinks/Pezsgo_sargadinnye_Agua_Fresca.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "2 font friss sárgadinnye kocka (6 csésze)",
           "2 csésze víz",
@@ -548,10 +548,10 @@ export class RecipeMockService {
       {
         name: "Chilton koktél",
         id: 28,
-        category: "ital",
-        imagePath: ["../../../assets/drinks/Chilton_koktel.JPG", "../../../assets/drinks/Chilton_koktel.JPG", "../../../assets/drinks/Chilton_koktel.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Ital",
+        imagePaths: ["../../../assets/drinks/Chilton_koktel.JPG", "../../../assets/drinks/Chilton_koktel.JPG", "../../../assets/drinks/Chilton_koktel.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "1 evőkanál durva só",
           "1 szelet citrom",
@@ -567,10 +567,10 @@ export class RecipeMockService {
       {
         name: "Mézes citromtea",
         id: 29,
-        category: "ital",
-        imagePath: ["../../../assets/drinks/Mezes_citromtea.JPG", "../../../assets/drinks/Mezes_citromtea.JPG", "../../../assets/drinks/Mezes_citromtea.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Ital",
+        imagePaths: ["../../../assets/drinks/Mezes_citromtea.JPG", "../../../assets/drinks/Mezes_citromtea.JPG", "../../../assets/drinks/Mezes_citromtea.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "1 csésze víz",
           "2 teáskanál méz",
@@ -585,10 +585,10 @@ export class RecipeMockService {
       {
         name: "Gyömbér-kurkuma gyógytea",
         id: 30,
-        category: "ital",
-        imagePath: ["../../../assets/drinks/Gyomber-kurkuma_gyogytea.JPG", "../../../assets/drinks/Gyomber-kurkuma_gyogytea.JPG", "../../../assets/drinks/Gyomber-kurkuma_gyogytea.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Ital",
+        imagePaths: ["../../../assets/drinks/Gyomber-kurkuma_gyogytea.JPG", "../../../assets/drinks/Gyomber-kurkuma_gyogytea.JPG", "../../../assets/drinks/Gyomber-kurkuma_gyogytea.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "2 csésze víz",
           "½ teáskanál őrölt kurkuma",
@@ -607,10 +607,10 @@ export class RecipeMockService {
       {
         name: "Bacon Ranch tésztasaláta",
         id: 31,
-        category: "saláta",
-        imagePath: ["../../../assets/salads/Bacon_Ranch_tesztasalata1.JPG", "../../../assets/salads/Bacon_Ranch_tesztasalata2.JPG", "../../../assets/salads/Bacon_Ranch_tesztasalata3.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Saláta",
+        imagePaths: ["../../../assets/salads/Bacon_Ranch_tesztasalata1.JPG", "../../../assets/salads/Bacon_Ranch_tesztasalata2.JPG", "../../../assets/salads/Bacon_Ranch_tesztasalata3.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "1 (12 uncia) csomag nyers háromszínű rotini tészta",
           "10 szelet bacon",
@@ -634,10 +634,10 @@ export class RecipeMockService {
       {
         name: "Rukkola saláta csonthéjas gyümölccsel",
         id: 32,
-        category: "saláta",
-        imagePath: ["../../../assets/salads/Rukkola_salata_csonthejas_gyumolccsel.JPG", "../../../assets/salads/Rukkola_salata_csonthejas_gyumolccsel.JPG", "../../../assets/salads/Rukkola_salata_csonthejas_gyumolccsel.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Saláta",
+        imagePaths: ["../../../assets/salads/Rukkola_salata_csonthejas_gyumolccsel.JPG", "../../../assets/salads/Rukkola_salata_csonthejas_gyumolccsel.JPG", "../../../assets/salads/Rukkola_salata_csonthejas_gyumolccsel.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "2 evőkanál extra szűz olívaolaj",
           "2 evőkanál vörösborecet vagy rozé ecet",
@@ -660,10 +660,10 @@ export class RecipeMockService {
       {
         name: "Pekándiós csirkesaláta",
         id: 33,
-        category: "saláta",
-        imagePath: ["../../../assets/salads/Pekandios_csirkesalata.JPG", "../../../assets/salads/Pekandios_csirkesalata.JPG", "../../../assets/salads/Pekandios_csirkesalata.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Saláta",
+        imagePaths: ["../../../assets/salads/Pekandios_csirkesalata.JPG", "../../../assets/salads/Pekandios_csirkesalata.JPG", "../../../assets/salads/Pekandios_csirkesalata.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "½ csésze majonéz",
           "½ csésze natúr görög joghurt",
@@ -684,10 +684,10 @@ export class RecipeMockService {
       {
         name: "Almás spenótsaláta",
         id: 34,
-        category: "saláta",
-        imagePath: ["../../../assets/salads/Almas_spenotsalata.JPG", "../../../assets/salads/Almas_spenotsalata.JPG", "../../../assets/salads/Almas_spenotsalata.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Saláta",
+        imagePaths: ["../../../assets/salads/Almas_spenotsalata.JPG", "../../../assets/salads/Almas_spenotsalata.JPG", "../../../assets/salads/Almas_spenotsalata.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "2 csésze bébispenót levél",
           "1 közepes alma, szeletelve",
@@ -702,10 +702,10 @@ export class RecipeMockService {
       {
         name: "Citrus- és gránátalma-saláta",
         id: 35,
-        category: "saláta",
-        imagePath: ["../../../assets/salads/Citrus_és_granatalma_salata.JPG", "../../../assets/salads/Citrus_és_granatalma_salata.JPG", "../../../assets/salads/Citrus_és_granatalma_salata.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Saláta",
+        imagePaths: ["../../../assets/salads/Citrus_és_granatalma_salata.JPG", "../../../assets/salads/Citrus_és_granatalma_salata.JPG", "../../../assets/salads/Citrus_és_granatalma_salata.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "2 rózsaszín vagy rubinvörös grapefruit",
           "2 narancs",
@@ -724,10 +724,10 @@ export class RecipeMockService {
       {
         name: "Waldorf saláta",
         id: 36,
-        category: "saláta",
-        imagePath: ["../../../assets/salads/Waldorf_salata.JPG", "../../../assets/salads/Waldorf_salata.JPG", "../../../assets/salads/Waldorf_salata.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Saláta",
+        imagePaths: ["../../../assets/salads/Waldorf_salata.JPG", "../../../assets/salads/Waldorf_salata.JPG", "../../../assets/salads/Waldorf_salata.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "½ csésze majonéz",
           "1 evőkanál fehér cukor",
@@ -746,10 +746,10 @@ export class RecipeMockService {
       {
         name: "Tojássaláta szendvicsbe",
         id: 37,
-        category: "saláta",
-        imagePath: ["../../../assets/salads/Tojassalata_szendvicsbe.JPG", "../../../assets/salads/Tojassalata_szendvicsbe.JPG", "../../../assets/salads/Tojassalata_szendvicsbe.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Saláta",
+        imagePaths: ["../../../assets/salads/Tojassalata_szendvicsbe.JPG", "../../../assets/salads/Tojassalata_szendvicsbe.JPG", "../../../assets/salads/Tojassalata_szendvicsbe.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "8 tojás",
           "½ csésze majonéz",
@@ -766,10 +766,10 @@ export class RecipeMockService {
       {
         name: "Nyári gyümölcssaláta",
         id: 38,
-        category: "saláta",
-        imagePath: ["../../../assets/salads/Nyari_gyumolcssalata.JPG", "../../../assets/salads/Nyari_gyumolcssalata.JPG", "../../../assets/salads/Nyari_gyumolcssalata.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Saláta",
+        imagePaths: ["../../../assets/salads/Nyari_gyumolcssalata.JPG", "../../../assets/salads/Nyari_gyumolcssalata.JPG", "../../../assets/salads/Nyari_gyumolcssalata.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "Szószhoz:",
           "⅔ csésze friss narancslé",
@@ -795,10 +795,10 @@ export class RecipeMockService {
       {
         name: "Caprese tészta thai bazsalikommal",
         id: 39,
-        category: "saláta",
-        imagePath: ["../../../assets/salads/Caprese_teszta_thai_bazsalikommal.JPG", "../../../assets/salads/Caprese_teszta_thai_bazsalikommal.JPG", "../../../assets/salads/Caprese_teszta_thai_bazsalikommal.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Saláta",
+        imagePaths: ["../../../assets/salads/Caprese_teszta_thai_bazsalikommal.JPG", "../../../assets/salads/Caprese_teszta_thai_bazsalikommal.JPG", "../../../assets/salads/Caprese_teszta_thai_bazsalikommal.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "1 kiló spagetti",
           "1 ½ csésze koktélparadicsom félbevágva",
@@ -818,10 +818,10 @@ export class RecipeMockService {
       {
         name: "Sárgarépa-mazsola saláta",
         id: 40,
-        category: "saláta",
-        imagePath: ["../../../assets/salads/Sargarepa-mazsola_salata.JPG", "../../../assets/salads/Sargarepa-mazsola_salata.JPG", "../../../assets/salads/Sargarepa-mazsola_salata.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Saláta",
+        imagePaths: ["../../../assets/salads/Sargarepa-mazsola_salata.JPG", "../../../assets/salads/Sargarepa-mazsola_salata.JPG", "../../../assets/salads/Sargarepa-mazsola_salata.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "4 és fél csésze reszelt sárgarépa",
           "1 (8 uncia) konzerv zúzott ananász, nem szárítva (opcionális)",
@@ -841,10 +841,10 @@ export class RecipeMockService {
       {
         name: "Barnacukor- és ananászmázas sonka",
         id: 41,
-        category: "főétel",
-        imagePath: ["../../../assets/main_courses/Barnacukor-es_ananaszmazas_sonka1.JPG", "../../../assets/main_courses/Barnacukor-es_ananaszmazas_sonka2.JPG", "../../../assets/main_courses/Barnacukor-es_ananaszmazas_sonka3.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Főétel",
+        imagePaths: ["../../../assets/main_courses/Barnacukor-es_ananaszmazas_sonka1.JPG", "../../../assets/main_courses/Barnacukor-es_ananaszmazas_sonka2.JPG", "../../../assets/main_courses/Barnacukor-es_ananaszmazas_sonka3.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "1 (6 font) készre főtt, csontos sonka",
           "1 friss ananász",
@@ -863,10 +863,10 @@ export class RecipeMockService {
       {
         name: "Mexikói quinoasaláta",
         id: 42,
-        category: "főétel",
-        imagePath: ["../../../assets/main_courses/Mexikoi_quinoasalata.JPG", "../../../assets/main_courses/Mexikoi_quinoasalata.JPG", "../../../assets/main_courses/Mexikoi_quinoasalata.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Főétel",
+        imagePaths: ["../../../assets/main_courses/Mexikoi_quinoasalata.JPG", "../../../assets/main_courses/Mexikoi_quinoasalata.JPG", "../../../assets/main_courses/Mexikoi_quinoasalata.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "2 csésze főtt quinoa",
           "1 (15 uncia) konzerv tarkabab, leöblítve és lecsepegtetve",
@@ -894,10 +894,10 @@ export class RecipeMockService {
       {
         name: "Grillezett lazacsteak pikáns áfonyaszósszal",
         id: 43,
-        category: "főétel",
-        imagePath: ["../../../assets/main_courses/Grillezett_lazacsteak_pikans_afonyaszosszal.JPG", "../../../assets/main_courses/Grillezett_lazacsteak_pikans_afonyaszosszal.JPG", "../../../assets/main_courses/Grillezett_lazacsteak_pikans_afonyaszosszal.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Főétel",
+        imagePaths: ["../../../assets/main_courses/Grillezett_lazacsteak_pikans_afonyaszosszal.JPG", "../../../assets/main_courses/Grillezett_lazacsteak_pikans_afonyaszosszal.JPG", "../../../assets/main_courses/Grillezett_lazacsteak_pikans_afonyaszosszal.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "½ csésze csirke alaplé",
           "¼ csésze balzsamecet",
@@ -920,10 +920,10 @@ export class RecipeMockService {
       {
         name: "Grillezett lazac avokádómártással",
         id: 44,
-        category: "főétel",
-        imagePath: ["../../../assets/main_courses/Grillezett_lazac_avokadomartassal.JPG", "../../../assets/main_courses/Grillezett_lazac_avokadomartassal.JPG", "../../../assets/main_courses/Grillezett_lazac_avokadomartassal.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Főétel",
+        imagePaths: ["../../../assets/main_courses/Grillezett_lazac_avokadomartassal.JPG", "../../../assets/main_courses/Grillezett_lazac_avokadomartassal.JPG", "../../../assets/main_courses/Grillezett_lazac_avokadomartassal.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "2 avokádó - meghámozva, kimagozva és felkockázva",
           "2 gerezd fokhagyma, meghámozva és felaprítva",
@@ -944,10 +944,10 @@ export class RecipeMockService {
       {
         name: "Grillezett tonhal friss tormával",
         id: 45,
-        category: "főétel",
-        imagePath: ["../../../assets/main_courses/Grillezett_tonhal_friss_tormaval.JPG", "../../../assets/main_courses/Grillezett_tonhal_friss_tormaval.JPG", "../../../assets/main_courses/Grillezett_tonhal_friss_tormaval.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Főétel",
+        imagePaths: ["../../../assets/main_courses/Grillezett_tonhal_friss_tormaval.JPG", "../../../assets/main_courses/Grillezett_tonhal_friss_tormaval.JPG", "../../../assets/main_courses/Grillezett_tonhal_friss_tormaval.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "2 (8 uncia) friss tonhal steak",
           "1 teáskanál növényi olaj",
@@ -968,10 +968,10 @@ export class RecipeMockService {
       {
         name: "Mézes-fokhagymás sertésszelet",
         id: 46,
-        category: "főétel",
-        imagePath: ["../../../assets/main_courses/Mezes-fokhagymas_sertesszelet.JPG", "../../../assets/main_courses/Mezes-fokhagymas_sertesszelet.JPG", "../../../assets/main_courses/Mezes-fokhagymas_sertesszelet.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Főétel",
+        imagePaths: ["../../../assets/main_courses/Mezes-fokhagymas_sertesszelet.JPG", "../../../assets/main_courses/Mezes-fokhagymas_sertesszelet.JPG", "../../../assets/main_courses/Mezes-fokhagymas_sertesszelet.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "½ csésze ketchup",
           "2 ⅔ evőkanál méz",
@@ -988,10 +988,10 @@ export class RecipeMockService {
       {
         name: "Légkeveréses sütőben sült burgonya",
         id: 47,
-        category: "főétel",
-        imagePath: ["../../../assets/main_courses/Legkevereses_sutoben_sult_burgonya.JPG", "../../../assets/main_courses/Legkevereses_sutoben_sult_burgonya.JPG", "../../../assets/main_courses/Legkevereses_sutoben_sult_burgonya.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Főétel",
+        imagePaths: ["../../../assets/main_courses/Legkevereses_sutoben_sult_burgonya.JPG", "../../../assets/main_courses/Legkevereses_sutoben_sult_burgonya.JPG", "../../../assets/main_courses/Legkevereses_sutoben_sult_burgonya.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "2 nagy burgonya, meghámozva",
           "1 evőkanál mogyoróolaj",
@@ -1006,10 +1006,10 @@ export class RecipeMockService {
       {
         name: "Könnyű tonhalragu",
         id: 48,
-        category: "főétel",
-        imagePath: ["../../../assets/main_courses/Konnyu_tonhalragu.JPG", "../../../assets/main_courses/Konnyu_tonhalragu.JPG", "../../../assets/main_courses/Konnyu_tonhalragu.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Főétel",
+        imagePaths: ["../../../assets/main_courses/Konnyu_tonhalragu.JPG", "../../../assets/main_courses/Konnyu_tonhalragu.JPG", "../../../assets/main_courses/Konnyu_tonhalragu.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "3 csésze főtt makaróni",
           "1 (5 uncia) tonhalkonzerv, lecsepegtetve",
@@ -1026,10 +1026,10 @@ export class RecipeMockService {
       {
         name: "Juhar- és barnacukros zabpehely",
         id: 49,
-        category: "főétel",
-        imagePath: ["../../../assets/main_courses/Juhar-és_barnacukros_zabpehely.JPG", "../../../assets/main_courses/Juhar-és_barnacukros_zabpehely.JPG", "../../../assets/main_courses/Juhar-és_barnacukros_zabpehely.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Főétel",
+        imagePaths: ["../../../assets/main_courses/Juhar-és_barnacukros_zabpehely.JPG", "../../../assets/main_courses/Juhar-és_barnacukros_zabpehely.JPG", "../../../assets/main_courses/Juhar-és_barnacukros_zabpehely.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "1 ½ csésze víz",
           "¾ csésze gyorsan megfőzhető zab",
@@ -1044,10 +1044,10 @@ export class RecipeMockService {
       {
         name: "Reggeli rizs Japánból",
         id: 50,
-        category: "főétel",
-        imagePath: ["../../../assets/main_courses/Reggeli_rizs_Japanbol.JPG", "../../../assets/main_courses/Reggeli_rizs_Japanbol.JPG", "../../../assets/main_courses/Reggeli_rizs_Japanbol.JPG"],
-        shortDescr: "...",
-        longDescr: "...",
+        category: "Főétel",
+        imagePaths: ["../../../assets/main_courses/Reggeli_rizs_Japanbol.JPG", "../../../assets/main_courses/Reggeli_rizs_Japanbol.JPG", "../../../assets/main_courses/Reggeli_rizs_Japanbol.JPG"],
+        shortDescr: "Rövid leírás a receptről...",
+        longDescr: "Hosszú leírás a receptről...",
         ingredients: [
           "1 teáskanál növényi olaj",
           "1 csésze hideg főtt rizs",

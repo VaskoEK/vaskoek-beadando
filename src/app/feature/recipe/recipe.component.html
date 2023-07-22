@@ -1,19 +1,23 @@
 
 <div *ngIf="recipe" id="divForRecipe">
 
-    <p>{{recipe.name}}</p>
+    <p id="recipeName">{{recipe.name}}</p>
     <p>{{recipe.longDescr}}</p>
-    <img src="{{recipe.imagePath[0]}}">
 
-    <div id="container">
-        <!-- <button id="left" (click)="leftButtonClicked()">Left</button> -->
-        <div style="height: 300px; width: 500px; border: 1px solid black" [style]="{'background-image': 'url({{recipe.imagePath[0]}})'}"></div>
-        <!-- <button id="right" (click)="rightButtonClicked()">Right</button> -->
-      </div>
+    <div id="sliderContainer">
+        
+        <div id="imageBox" [style]="{'background-image': 'url(' + recipe.imagePaths[activeImageNumber] + ')'}">
+          <button class="button button__left" (click)="leftButtonClicked()"><</button>
+          <button class="button button__right" (click)="rightButtonClicked()">></button>
+        </div>
+    </div>
 
     <p class="label">Hozzávalók:</p>
-    <div *ngFor="let ingredient of recipe.ingredients">{{ingredient}}</div>
+    <div *ngFor="let ingredient of recipe.ingredients" id="ingrText">{{ingredient}}</div>
     <p class="label">Elkészítés:</p>
-    <div *ngFor="let direction of recipe.directions">{{direction}}</div>
+    <div *ngFor="let direction of recipe.directions" id="directionText">{{direction}}</div><br><br>
 
+    <a [routerLink]="['recipeList']">
+        <button>Vissza a főoldalra</button><br><br>
+    </a>
 </div>

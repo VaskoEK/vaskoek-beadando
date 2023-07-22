@@ -1,12 +1,14 @@
 
-Keresés: <input type="text" [(ngModel)]="searchedString" (ngModelChange)="searching($event)" >
+<p id="labelForSearching" class="toCenter">Keress receptnévre vagy kategóriára:</p>
+<input type="text" [(ngModel)]="searchedString" (ngModelChange)="searching($event)" id="inputForSearching" class="toCenter" >
 
 <p id="message">{{message}}</p>
 
-<div *ngFor="let recipe of displayedRecipes">
+<div *ngFor="let recipe of displayedRecipes" id="boxForOneRecipe">
     <p>{{recipe.name}}</p>
     <p>{{recipe.shortDescr}}</p>
-    <img src="{{recipe.imagePath[0]}}">
+    <!-- <img src="{{recipe.imagePaths[0]}}" id="imageBox"> -->
+    <div id="imageBox" [style]="{'background-image': 'url(' + recipe.imagePaths[0] + ')'}"></div>
     <button>Kedvencek közé</button>
-    <button>Törlés kedvencek közül</button>
+    <button>Törlés kedvencek közül</button><br><br>
 </div>

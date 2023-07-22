@@ -14,6 +14,8 @@ export class RecipeComponent implements OnInit {
   recipe: Recipe | null | undefined = null;
   recipes: Recipe[] | null = null;
 
+  activeImageNumber: number = 0;
+
   constructor(private actRoute: ActivatedRoute, private readonly recipeService: RecipeService) {}
 
   ngOnInit(): void {
@@ -25,6 +27,30 @@ export class RecipeComponent implements OnInit {
       this.recipe = this.recipes.find((recipe) => recipe.id == this.id);
     })
     
-  }   
+  }
+  
+  leftButtonClicked(): void {
+
+    let pic_nr = this.activeImageNumber - 1;
+            
+    if (pic_nr < 0) {
+      this.activeImageNumber = this.recipe.imagePaths.length - 1;
+    }
+    else {
+      this.activeImageNumber = pic_nr;
+    }
+  }
+
+  rightButtonClicked(): void {
+
+    let pic_nr = this.activeImageNumber + 1;
+            
+    if (pic_nr > this.recipe.imagePaths.length - 1) {
+      this.activeImageNumber = 0;
+    }
+    else {
+      this.activeImageNumber = pic_nr;
+    }
+  }
 
 }

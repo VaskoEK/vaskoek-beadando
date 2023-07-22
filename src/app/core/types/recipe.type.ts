@@ -2,7 +2,7 @@ export type Recipe = {
     name: string,
     id: number,
     category: string,
-    imagePath: string[],
+    imagePaths: string[],
     shortDescr: string,
     longDescr: string,
     ingredients: string[],

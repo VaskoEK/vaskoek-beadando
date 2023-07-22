@@ -1,3 +1,70 @@
+$img-height: 450px;
+
+#recipeName {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+#sliderContainer {
+
+    .button {
+        height: 24px;
+        width: 24px;
+        background-color: rgb(54, 50, 50, .7);
+        border: none;
+        color: azure;
+        font-weight: 800;
+    }
+    .button__left {
+        position: absolute;
+        left: 12px;
+        top: calc($img-height / 2 - 12px);
+
+    }
+
+    .button__right {
+        position: absolute;
+        right: 12px;
+        top: calc($img-height / 2 - 12px);
+    }
+
+    #imageBox {
+        position: relative;
+        width: 95vw;
+        height: $img-height;
+        border: 1px solid black;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
 .label {
     font-style: italic;
+}
+
+#ingrText {
+    text-align: justify;
+}
+
+#directionText {
+    text-align: justify;
+}
+
+@media only screen and (min-width: 600px) {
+    #imageBox {
+        max-width: 70vw;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    #imageBox {
+        max-width: 60vw;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #imageBox {
+        max-width: 44vw;
+    }
 }

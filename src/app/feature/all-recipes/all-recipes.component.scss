@@ -1,3 +1,34 @@
+
+#labelForSearching {
+    width: fit-content;
+}
+
+#inputForSearching {
+    width: 15rem;
+}
+
+.toCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #message {
     color: red;
 }
+
+#boxForOneRecipe {
+    border: 1px solid rgb(209, 205, 205);
+    padding: .2rem;
+    margin-bottom: .8rem;
+
+    #imageBox {
+        width: 95vw;
+        height: 30vh;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+
