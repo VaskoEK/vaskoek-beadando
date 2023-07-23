@@ -8,13 +8,17 @@ import { MainPageComponent } from './feature/main-page/main-page.component';
 import { AllRecipesComponent } from './feature/all-recipes/all-recipes.component';
 import { RecipeComponent } from './feature/recipe/recipe.component';
 import { FormsModule } from '@angular/forms';
+import { StickyMenuComponent } from './sticky-menu/sticky-menu.component';
+import { FavoritesComponent } from './feature/favorites/favorites.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainPageComponent,
     AllRecipesComponent,
-    RecipeComponent
+    RecipeComponent,
+    StickyMenuComponent,
+    FavoritesComponent
   ],
   imports: [
     BrowserModule,

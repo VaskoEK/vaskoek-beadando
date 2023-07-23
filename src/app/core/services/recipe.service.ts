@@ -18,12 +18,8 @@ export class RecipeService {
     return this.recipeHttp.getRecipes();
   }
 
-  // getSingleRecipeById(id: number): Recipe | null | undefined {
-  //   if (this.recipes !== null) {
-  //     return this.recipes.find((recipes) => recipes.id == id);
-  //   }
-  //   else {
-  //     return this.recipes;
-  //   }
-  // }
+  getRecipesByIds(ids: number[]): Observable<Recipe[]> {
+    return this.recipeHttp.getRecipesByIds(ids);
+  }
+  
 }

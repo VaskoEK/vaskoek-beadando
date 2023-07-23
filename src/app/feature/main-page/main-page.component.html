@@ -10,12 +10,10 @@
           <nav (click)="navigateToRecipe(cat)">
             <p class="toCenter" id="recipeName">{{cat.name}}</p>
             <p class="toCenter">{{cat.shortDescr}}</p>
-            <!-- <img src="{{cat.imagePaths[0]}}" id="imageBox"> -->
             <div id="imageBox" [style]="{'background-image': 'url(' + cat.imagePaths[0] + ')'}"></div>
           </nav>
-          
-          <button class="button button__fav">Kedvencek közé</button>
-          <button class="button button__unfav">Törlés kedvencek közül</button>
+          <button class="button" (click)="addToFavorites(cat)">Kedvencek közé</button>
+          <button class="button" (click)="deleteFromFavorites(cat)">Törlés kedvencek közül</button>
         </div>
       </ng-container>
     </ng-container>

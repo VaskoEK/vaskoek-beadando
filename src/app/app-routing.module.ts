@@ -3,10 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainPageComponent } from './feature/main-page/main-page.component';
 import { AllRecipesComponent } from './feature/all-recipes/all-recipes.component';
 import { RecipeComponent } from './feature/recipe/recipe.component';
+import { FavoritesComponent } from './feature/favorites/favorites.component';
 
 const routes: Routes = [
   { 
-    path: "recipeList",
+    path: "mainPage",
     component: MainPageComponent
   },
   {
@@ -17,13 +18,18 @@ const routes: Routes = [
     path: 'recipe/:id',
     component: RecipeComponent
   },
-  { path: '',  // ha semmmit nem ír be, irányítson rá a home-ra
-    redirectTo: '/recipeList',
-    pathMatch: 'full'  // ezt ide kell írni a redirectTo miatt
+  {
+    path: 'favorites',
+    component: FavoritesComponent
+  },
+  { 
+    path: '',
+    redirectTo: '/mainPage',
+    pathMatch: 'full'
   },
   {
-    path: '**',  // ha bármi az url, irányítson rá a home-ra
-    redirectTo: '/recipeList'
+    path: '**',
+    redirectTo: '/mainPage'
   }
 ];
 

@@ -1,0 +1,25 @@
+<nav class="sticky-top-menu">
+    <div class="container">
+        <a class="logo" href="#"><i class="fa fa-pagelines"></i></a>
+        <button class="menu-toggler" (click)="toggleMenu()">
+            <span class="hamburger" [ngClass]="{'open': isMenuOpen}">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </span>
+        </button>
+        <ul class="menu">
+            <li><a [routerLink]="['mainPage']">Főoldal</a></li>
+            <li><a [routerLink]="['allRecipes']">Összes étel</a></li>
+            <li><a [routerLink]="['favorites']">Kedvencek</a></li>
+        </ul>
+    </div>
+    <div class="dropdown-menu" [ngClass]="{'open': isMenuOpen}">
+        <ul class="dropdown-menu-list">
+            <li><a [routerLink]="['mainPage']">Főoldal</a></li>
+            <li><a [routerLink]="['allRecipes']">Összes étel</a></li>
+            <li><a [routerLink]="['favorites']">Kedvencek</a></li>
+        </ul>
+    </div>
+</nav>
+

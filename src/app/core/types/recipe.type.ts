@@ -8,3 +8,4 @@ export type Recipe = {
     ingredients: string[],
     directions: string[]
 }
+

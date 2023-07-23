@@ -10,7 +10,10 @@ import { Observable } from 'rxjs';
 })
 export class RecipeHttpService {
 
-  constructor(private readonly http: HttpClient, private readonly mock: RecipeMockService) { }
+  constructor(
+    private readonly http: HttpClient,
+    private readonly mock: RecipeMockService
+  ) { }
 
   getRecipes(): Observable<Recipe[]> {
     if (environment.mockAPI) {
@@ -21,7 +24,17 @@ export class RecipeHttpService {
     }
   }
 
+  getRecipesByIds(ids: number[]): Observable<Recipe[]> {
+    if (environment.mockAPI) {
+      return this.mock.getRecipesByIds(ids);
+    }
+    else {
+      return this.getRequest(environment.apiUrl);
+    }
+  }
+
   private getRequest(path: string): Observable<any> {
     return this.http.get(path);
   }
+
 }

@@ -2,13 +2,17 @@
 <p id="labelForSearching" class="toCenter">Keress receptnévre vagy kategóriára:</p>
 <input type="text" [(ngModel)]="searchedString" (ngModelChange)="searching($event)" id="inputForSearching" class="toCenter" >
 
+<div id="divForCheckbox">
+    <input type="checkbox" name="" id="searchInFavs" [(ngModel)]="searchOnlyInFavorites">
+    <label for="searchInFavs">Csak a kedvencek közt keressen</label>
+</div>
+
 <p id="message">{{message}}</p>
 
 <div *ngFor="let recipe of displayedRecipes" id="boxForOneRecipe">
-    <p>{{recipe.name}}</p>
-    <p>{{recipe.shortDescr}}</p>
-    <!-- <img src="{{recipe.imagePaths[0]}}" id="imageBox"> -->
+    <p class="toCenter" id="recipeName">{{recipe.name}}</p>
+    <p class="toCenter">{{recipe.shortDescr}}</p>
     <div id="imageBox" [style]="{'background-image': 'url(' + recipe.imagePaths[0] + ')'}"></div>
-    <button>Kedvencek közé</button>
-    <button>Törlés kedvencek közül</button><br><br>
+    <button (click)="addToFavorites(recipe)">Kedvencek közé</button>
+    <button (click)="deleteFromFavorites(recipe)">Törlés kedvencek közül</button><br><br>
 </div>

@@ -1,5 +1,6 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { FavoritesService } from 'src/app/core/services/favorites.service';
 import { RecipeService } from 'src/app/core/services/recipe.service';
 import { Recipe } from 'src/app/core/types/recipe.type';
 
@@ -19,7 +20,12 @@ export class AllRecipesComponent implements OnInit {
 
   message: string = "";
 
-  constructor( private readonly recipeService: RecipeService ) { }
+  searchOnlyInFavorites: boolean = false;
+
+  constructor( 
+    private readonly recipeService: RecipeService, 
+    private readonly favoritesService: FavoritesService
+  ) { }
 
   ngOnInit(): void {
     this.recipeService.getRecipes().subscribe({
@@ -46,6 +52,11 @@ export class AllRecipesComponent implements OnInit {
           return a.indexOf(x) == i; 
       });
 
+      if (this.searchOnlyInFavorites) {
+          let ids = this.favoritesService.getRecipeIdsFromFavorites();
+          match = match.filter(recipe => ids.includes(recipe.id));
+      }
+
       console.log(match);  // final merged result will be in the 1st array
 
       if (match.length > 0) {
@@ -55,11 +66,19 @@ export class AllRecipesComponent implements OnInit {
       else {
         this.setRecipesToDisplay([]);
         this.message = "Nincs találat!";
-      } 
-    }
+      }
+  }
   
   private setRecipesToDisplay(recipes: Recipe[]) {
     this.displayedRecipes = recipes;
+  }
+
+  addToFavorites(recipe: Recipe) {
+    this.favoritesService.saveRecipeToFavorites(recipe);
+  }
+
+  deleteFromFavorites(recipe: Recipe) {
+    this.favoritesService.deleteRecipeFromFavorites(recipe);
   }
 
 };
