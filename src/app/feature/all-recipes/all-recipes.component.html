@@ -13,6 +13,16 @@
     <p class="toCenter" id="recipeName">{{recipe.name}}</p>
     <p class="toCenter">{{recipe.shortDescr}}</p>
     <div id="imageBox" [style]="{'background-image': 'url(' + recipe.imagePaths[0] + ')'}"></div>
-    <button (click)="addToFavorites(recipe)">Kedvencek közé</button>
-    <button (click)="deleteFromFavorites(recipe)">Törlés kedvencek közül</button><br><br>
+    <!-- <button (click)="addToFavorites(recipe)">Kedvencek közé</button> -->
+    <div class="example-button-row">
+        <button mat-mini-fab matTooltip="Primary" color="primary" aria-label="Example mini fab with a heart icon" (click)="addToFavorites(recipe)" style="color: rgb(27, 112, 31); background-color: white;">
+          <mat-icon>favorite</mat-icon>
+        </button>
+    </div>
+    <!-- <button (click)="deleteFromFavorites(recipe)">Törlés kedvencek közül</button><br><br> -->
+    <div class="example-button-row">
+        <button mat-mini-fab matTooltip="Primary" color="primary" aria-label="Example mini fab with a delete icon" (click)="deleteFromFavorites(recipe)" style="color: rgb(71, 68, 68); background-color: white;">
+          <mat-icon>delete</mat-icon>
+        </button>
+    </div>
 </div>

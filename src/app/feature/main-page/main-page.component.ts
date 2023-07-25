@@ -14,7 +14,11 @@ export class MainPageComponent implements OnInit {
   recipes: Recipe[] = [];
   categories: string[] = [];
 
-  constructor( private readonly recipeService: RecipeService, private router: Router, private readonly favoritesService: FavoritesService) { }
+  constructor(
+    private readonly recipeService: RecipeService, 
+    private router: Router, 
+    private readonly favoritesService: FavoritesService
+  ) { }
 
   ngOnInit(): void {
     this.recipeService.getRecipes().subscribe((data) => {

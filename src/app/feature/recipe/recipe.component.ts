@@ -16,7 +16,10 @@ export class RecipeComponent implements OnInit {
 
   activeImageNumber: number = 0;
 
-  constructor(private actRoute: ActivatedRoute, private readonly recipeService: RecipeService) {}
+  constructor(
+    private actRoute: ActivatedRoute, 
+    private readonly recipeService: RecipeService
+  ) {}
 
   ngOnInit(): void {
 

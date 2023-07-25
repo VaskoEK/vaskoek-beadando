@@ -10,6 +10,8 @@ import { RecipeComponent } from './feature/recipe/recipe.component';
 import { FormsModule } from '@angular/forms';
 import { StickyMenuComponent } from './sticky-menu/sticky-menu.component';
 import { FavoritesComponent } from './feature/favorites/favorites.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AngularMaterialModule } from './angular-material.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { FavoritesComponent } from './feature/favorites/favorites.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    AngularMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

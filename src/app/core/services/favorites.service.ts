@@ -8,9 +8,7 @@ import { Observable, of } from 'rxjs';
 })
 export class FavoritesService {
 
-  constructor(
-    private readonly recipeService: RecipeService
-  ) { }
+  constructor(private readonly recipeService: RecipeService) { }
 
   saveRecipeToFavorites(recipe: Recipe) {
     let ids: number[] = [];
