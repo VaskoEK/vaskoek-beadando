@@ -7,6 +7,69 @@ import { Observable, of } from 'rxjs';
 })
 export class RecipeMockService {
 
+  pics: string[] = [
+    "../../../assets/soups/Alap_sonkas_bableves1.JPG",
+    "../../../assets/soups/Alap_sonkas_bableves2.JPG",
+    "../../../assets/soups/Alap_sonkas_bableves3.JPG",
+    "../../../assets/soups/Sult_brokkoli_leves.JPG",
+    "../../../assets/soups/Hazi_csirkehusleves.JPG",
+    "../../../assets/soups/Lencseleves.JPG",
+    "../../../assets/soups/Csirke_tortilla_leves.JPG",
+    "../../../assets/soups/Taco_leves.JPG",
+    "../../../assets/soups/Vegan_Taco_Chili.JPG",
+    "../../../assets/soups/Edesburgonya_leves.JPG",
+    "../../../assets/soups/Mango_Gazpacho.JPG",
+    "../../../assets/soups/Kanadai_sargaborsoleves_sonkaval.JPG",
+    "../../../assets/desserts/Banankenyer1.JPG",
+    "../../../assets/desserts/Banankenyer2.JPG",
+    "../../../assets/desserts/Banankenyer3.JPG",
+    "../../../assets/desserts/Juharsuti.JPG",
+    "../../../assets/desserts/PHILADELPHIA_klasszikus_sajttorta.JPG",
+    "../../../assets/desserts/Mogyorovajas_tejszinhab.JPG",
+    "../../../assets/desserts/Mogyorovajas_M&M_suti.JPG",
+    "../../../assets/desserts/Tojaslikor_sodo.JPG",
+    "../../../assets/desserts/Serpenyos_epres_palacsinta.JPG",
+    "../../../assets/desserts/Old-Fashioned_palacsinta.JPG",
+    "../../../assets/desserts/Mini_palacsinta_parfe.JPG",
+    "../../../assets/desserts/Epres_sajttorta_uvegben.JPG",
+    "../../../assets/drinks/Egeszseges_zoldle1.JPG",
+    "../../../assets/drinks/Egeszseges_zoldle2.JPG",
+    "../../../assets/drinks/Egeszseges_zoldle3.JPG",
+    "../../../assets/drinks/Old-Fashioned_limonade.JPG",
+    "../../../assets/drinks/Brazil_limonade.JPG",
+    "../../../assets/drinks/Ananasz_Margarita.JPG",
+    "../../../assets/drinks/Az_IGAZI_Long_Island-i_jeges_tea.JPG",
+    "../../../assets/drinks/Csokolade_krem_Cold_Brew.JPG",
+    "../../../assets/drinks/Pezsgo_sargadinnye_Agua_Fresca.JPG",
+    "../../../assets/drinks/Chilton_koktel.JPG",
+    "../../../assets/drinks/Mezes_citromtea.JPG",
+    "../../../assets/drinks/Gyomber-kurkuma_gyogytea.JPG",
+    "../../../assets/salads/Bacon_Ranch_tesztasalata1.JPG",
+    "../../../assets/salads/Bacon_Ranch_tesztasalata2.JPG",
+    "../../../assets/salads/Bacon_Ranch_tesztasalata3.JPG",
+    "../../../assets/salads/Rukkola_salata_csonthejas_gyumolccsel.JPG",
+    "../../../assets/salads/Pekandios_csirkesalata.JPG",
+    "../../../assets/salads/Almas_spenotsalata.JPG",
+    "../../../assets/salads/Citrus_és_granatalma_salata.JPG",
+    "../../../assets/salads/Waldorf_salata.JPG",
+    "../../../assets/salads/Tojassalata_szendvicsbe.JPG",
+    "../../../assets/salads/Nyari_gyumolcssalata.JPG",
+    "../../../assets/salads/Caprese_teszta_thai_bazsalikommal.JPG",
+    "../../../assets/salads/Sargarepa-mazsola_salata.JPG",
+    "../../../assets/main_courses/Barnacukor-es_ananaszmazas_sonka1.JPG",
+    "../../../assets/main_courses/Barnacukor-es_ananaszmazas_sonka2.JPG",
+    "../../../assets/main_courses/Barnacukor-es_ananaszmazas_sonka3.JPG",
+    "../../../assets/main_courses/Mexikoi_quinoasalata.JPG",
+    "../../../assets/main_courses/Grillezett_lazacsteak_pikans_afonyaszosszal.JPG",
+    "../../../assets/main_courses/Grillezett_lazac_avokadomartassal.JPG",
+    "../../../assets/main_courses/Grillezett_tonhal_friss_tormaval.JPG",
+    "../../../assets/main_courses/Mezes-fokhagymas_sertesszelet.JPG",
+    "../../../assets/main_courses/Legkevereses_sutoben_sult_burgonya.JPG",
+    "../../../assets/main_courses/Konnyu_tonhalragu.JPG",
+    "../../../assets/main_courses/Juhar-és_barnacukros_zabpehely.JPG",
+    "../../../assets/main_courses/Reggeli_rizs_Japanbol.JPG"
+  ];
+
   recipes: Recipe[] = [
     {
       name: "Alap sonkás bableves",
@@ -28,7 +91,7 @@ export class RecipeMockService {
       name: "Sült brokkoli leves",
       id: 2,
       category: "Leves",
-      imagePaths: ["../../../assets/soups/Sult_brokkoli_leves.JPG", "../../../assets/soups/Sult_brokkoli_leves.JPG", "../../../assets/soups/Sult_brokkoli_leves.JPG"],
+      imagePaths: ["../../../assets/soups/Sult_brokkoli_leves.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -46,7 +109,7 @@ export class RecipeMockService {
       name: "Házi csirkehúsleves",
       id: 3,
       category: "Leves",
-      imagePaths: ["../../../assets/soups/Hazi_csirkehusleves.JPG", "../../../assets/soups/Hazi_csirkehusleves.JPG", "../../../assets/soups/Hazi_csirkehusleves.JPG"],
+      imagePaths: ["../../../assets/soups/Hazi_csirkehusleves.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -63,7 +126,7 @@ export class RecipeMockService {
       name: "Lencseleves",
       id: 4,
       category: "Leves",
-      imagePaths: ["../../../assets/soups/Lencseleves.JPG", "../../../assets/soups/Lencseleves.JPG", "../../../assets/soups/Lencseleves.JPG"],
+      imagePaths: ["../../../assets/soups/Lencseleves.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -81,7 +144,7 @@ export class RecipeMockService {
       name: "Csirke tortilla leves",
       id: 5,
       category: "Leves",
-      imagePaths: ["../../../assets/soups/Csirke_tortilla_leves.JPG", "../../../assets/soups/Csirke_tortilla_leves.JPG", "../../../assets/soups/Csirke_tortilla_leves.JPG"],
+      imagePaths: ["../../../assets/soups/Csirke_tortilla_leves.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -98,7 +161,7 @@ export class RecipeMockService {
       name: "Taco leves",
       id: 6,
       category: "Leves",
-      imagePaths: ["../../../assets/soups/Taco_leves.JPG", "../../../assets/soups/Taco_leves.JPG", "../../../assets/soups/Taco_leves.JPG"],
+      imagePaths: ["../../../assets/soups/Taco_leves.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -114,7 +177,7 @@ export class RecipeMockService {
       name: "Vegán Taco Chili",
       id: 7,
       category: "Leves",
-      imagePaths: ["../../../assets/soups/Vegan_Taco_Chili.JPG", "../../../assets/soups/Vegan_Taco_Chili.JPG", "../../../assets/soups/Vegan_Taco_Chili.JPG"],
+      imagePaths: ["../../../assets/soups/Vegan_Taco_Chili.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -129,7 +192,7 @@ export class RecipeMockService {
       name: "Édesburgonya leves",
       id: 8,
       category: "Leves",
-      imagePaths: ["../../../assets/soups/Edesburgonya_leves.JPG", "../../../assets/soups/Edesburgonya_leves.JPG", "../../../assets/soups/Edesburgonya_leves.JPG"],
+      imagePaths: ["../../../assets/soups/Edesburgonya_leves.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -144,7 +207,7 @@ export class RecipeMockService {
       name: "Mangó Gazpacho",
       id: 9,
       category: "Leves",
-      imagePaths: ["../../../assets/soups/Mango_Gazpacho.JPG", "../../../assets/soups/Mango_Gazpacho.JPG", "../../../assets/soups/Mango_Gazpacho.JPG"],
+      imagePaths: ["../../../assets/soups/Mango_Gazpacho.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -158,7 +221,7 @@ export class RecipeMockService {
       name: "Kanadai sárgaborsóleves sonkával",
       id: 10,
       category: "Leves",
-      imagePaths: ["../../../assets/soups/Kanadai_sargaborsoleves_sonkaval.JPG", "../../../assets/soups/Kanadai_sargaborsoleves_sonkaval.JPG", "../../../assets/soups/Kanadai_sargaborsoleves_sonkaval.JPG"],
+      imagePaths: ["../../../assets/soups/Kanadai_sargaborsoleves_sonkaval.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -198,7 +261,7 @@ export class RecipeMockService {
       name: "Juharsüti",
       id: 12,
       category: "Desszert",
-      imagePaths: ["../../../assets/desserts/Juharsuti.JPG", "../../../assets/desserts/Juharsuti.JPG", "../../../assets/desserts/Juharsuti.JPG"],
+      imagePaths: ["../../../assets/desserts/Juharsuti.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -224,7 +287,7 @@ export class RecipeMockService {
       name: "PHILADELPHIA klasszikus sajttorta",
       id: 13,
       category: "Desszert",
-      imagePaths: ["../../../assets/desserts/PHILADELPHIA_klasszikus_sajttorta.JPG", "../../../assets/desserts/PHILADELPHIA_klasszikus_sajttorta.JPG", "../../../assets/desserts/PHILADELPHIA_klasszikus_sajttorta.JPG"],
+      imagePaths: ["../../../assets/desserts/PHILADELPHIA_klasszikus_sajttorta.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -248,7 +311,7 @@ export class RecipeMockService {
       name: "Mogyoróvajas tejszínhab",
       id: 14,
       category: "Desszert",
-      imagePaths: ["../../../assets/desserts/Mogyorovajas_tejszinhab.JPG", "../../../assets/desserts/Mogyorovajas_tejszinhab.JPG", "../../../assets/desserts/Mogyorovajas_tejszinhab.JPG"],
+      imagePaths: ["../../../assets/desserts/Mogyorovajas_tejszinhab.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -266,7 +329,7 @@ export class RecipeMockService {
       name: "Mogyoróvajas M&M süti",
       id: 15,
       category: "Desszert",
-      imagePaths: ["../../../assets/desserts/Mogyorovajas_M&M_suti.JPG", "../../../assets/desserts/Mogyorovajas_M&M_suti.JPG", "../../../assets/desserts/Mogyorovajas_M&M_suti.JPG"],
+      imagePaths: ["../../../assets/desserts/Mogyorovajas_M&M_suti.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -291,7 +354,7 @@ export class RecipeMockService {
       name: "Tojáslikőr sodó",
       id: 16,
       category: "Desszert",
-      imagePaths: ["../../../assets/desserts/Tojaslikor_sodo.JPG", "../../../assets/desserts/Tojaslikor_sodo.JPG", "../../../assets/desserts/Tojaslikor_sodo.JPG"],
+      imagePaths: ["../../../assets/desserts/Tojaslikor_sodo.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -310,7 +373,7 @@ export class RecipeMockService {
       name: "Serpenyős epres palacsinta",
       id: 17,
       category: "Desszert",
-      imagePaths: ["../../../assets/desserts/Serpenyos_epres_palacsinta.JPG", "../../../assets/desserts/Serpenyos_epres_palacsinta.JPG", "../../../assets/desserts/Serpenyos_epres_palacsinta.JPG"],
+      imagePaths: ["../../../assets/desserts/Serpenyos_epres_palacsinta.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -333,7 +396,7 @@ export class RecipeMockService {
       name: "Old-Fashioned palacsinta",
       id: 18,
       category: "Desszert",
-      imagePaths: ["../../../assets/desserts/Old-Fashioned_palacsinta.JPG", "../../../assets/desserts/Old-Fashioned_palacsinta.JPG", "../../../assets/desserts/Old-Fashioned_palacsinta.JPG"],
+      imagePaths: ["../../../assets/desserts/Old-Fashioned_palacsinta.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -354,7 +417,7 @@ export class RecipeMockService {
       name: "Mini palacsinta parfé",
       id: 19,
       category: "Desszert",
-      imagePaths: ["../../../assets/desserts/Mini_palacsinta_parfe.JPG", "../../../assets/desserts/Mini_palacsinta_parfe.JPG", "../../../assets/desserts/Mini_palacsinta_parfe.JPG"],
+      imagePaths: ["../../../assets/desserts/Mini_palacsinta_parfe.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -372,7 +435,7 @@ export class RecipeMockService {
       name: "Epres sajttorta üvegben",
       id: 20,
       category: "Desszert",
-      imagePaths: ["../../../assets/desserts/Epres_sajttorta_uvegben.JPG", "../../../assets/desserts/Epres_sajttorta_uvegben.JPG", "../../../assets/desserts/Epres_sajttorta_uvegben.JPG"],
+      imagePaths: ["../../../assets/desserts/Epres_sajttorta_uvegben.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -420,7 +483,7 @@ export class RecipeMockService {
       name: "Old-Fashioned limonádé",
       id: 22,
       category: "Ital",
-      imagePaths: ["../../../assets/drinks/Old-Fashioned_limonade.JPG", "../../../assets/drinks/Old-Fashioned_limonade.JPG", "../../../assets/drinks/Old-Fashioned_limonade.JPG"],
+      imagePaths: ["../../../assets/drinks/Old-Fashioned_limonade.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -438,7 +501,7 @@ export class RecipeMockService {
       name: "Brazil limonádé",
       id: 23,
       category: "Ital",
-      imagePaths: ["../../../assets/drinks/Brazil_limonade.JPG", "../../../assets/drinks/Brazil_limonade.JPG", "../../../assets/drinks/Brazil_limonade.JPG"],
+      imagePaths: ["../../../assets/drinks/Brazil_limonade.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -457,7 +520,7 @@ export class RecipeMockService {
       name: "Ananász Margarita",
       id: 24,
       category: "Ital",
-      imagePaths: ["../../../assets/drinks/Ananasz_Margarita.JPG", "../../../assets/drinks/Ananasz_Margarita.JPG", "../../../assets/drinks/Ananasz_Margarita.JPG"],
+      imagePaths: ["../../../assets/drinks/Ananasz_Margarita.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -480,7 +543,7 @@ export class RecipeMockService {
       name: "Az IGAZI Long Island-i jeges tea",
       id: 25,
       category: "Ital",
-      imagePaths: ["../../../assets/drinks/Az_IGAZI_Long_Island-i_jeges_tea.JPG", "../../../assets/drinks/Az_IGAZI_Long_Island-i_jeges_tea.JPG", "../../../assets/drinks/Az_IGAZI_Long_Island-i_jeges_tea.JPG"],
+      imagePaths: ["../../../assets/drinks/Az_IGAZI_Long_Island-i_jeges_tea.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -502,7 +565,7 @@ export class RecipeMockService {
       name: "Csokoládé krém Cold Brew",
       id: 26,
       category: "Ital",
-      imagePaths: ["../../../assets/drinks/Csokolade_krem_Cold_Brew.JPG", "../../../assets/drinks/Csokolade_krem_Cold_Brew.JPG", "../../../assets/drinks/Csokolade_krem_Cold_Brew.JPG"],
+      imagePaths: ["../../../assets/drinks/Csokolade_krem_Cold_Brew.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -522,7 +585,7 @@ export class RecipeMockService {
       name: "Pezsgő sárgadinnye Agua Fresca",
       id: 27,
       category: "Ital",
-      imagePaths: ["../../../assets/drinks/Pezsgo_sargadinnye_Agua_Fresca.JPG", "../../../assets/drinks/Pezsgo_sargadinnye_Agua_Fresca.JPG", "../../../assets/drinks/Pezsgo_sargadinnye_Agua_Fresca.JPG"],
+      imagePaths: ["../../../assets/drinks/Pezsgo_sargadinnye_Agua_Fresca.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -544,7 +607,7 @@ export class RecipeMockService {
       name: "Chilton koktél",
       id: 28,
       category: "Ital",
-      imagePaths: ["../../../assets/drinks/Chilton_koktel.JPG", "../../../assets/drinks/Chilton_koktel.JPG", "../../../assets/drinks/Chilton_koktel.JPG"],
+      imagePaths: ["../../../assets/drinks/Chilton_koktel.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -563,7 +626,7 @@ export class RecipeMockService {
       name: "Mézes citromtea",
       id: 29,
       category: "Ital",
-      imagePaths: ["../../../assets/drinks/Mezes_citromtea.JPG", "../../../assets/drinks/Mezes_citromtea.JPG", "../../../assets/drinks/Mezes_citromtea.JPG"],
+      imagePaths: ["../../../assets/drinks/Mezes_citromtea.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -581,7 +644,7 @@ export class RecipeMockService {
       name: "Gyömbér-kurkuma gyógytea",
       id: 30,
       category: "Ital",
-      imagePaths: ["../../../assets/drinks/Gyomber-kurkuma_gyogytea.JPG", "../../../assets/drinks/Gyomber-kurkuma_gyogytea.JPG", "../../../assets/drinks/Gyomber-kurkuma_gyogytea.JPG"],
+      imagePaths: ["../../../assets/drinks/Gyomber-kurkuma_gyogytea.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -630,7 +693,7 @@ export class RecipeMockService {
       name: "Rukkola saláta csonthéjas gyümölccsel",
       id: 32,
       category: "Saláta",
-      imagePaths: ["../../../assets/salads/Rukkola_salata_csonthejas_gyumolccsel.JPG", "../../../assets/salads/Rukkola_salata_csonthejas_gyumolccsel.JPG", "../../../assets/salads/Rukkola_salata_csonthejas_gyumolccsel.JPG"],
+      imagePaths: ["../../../assets/salads/Rukkola_salata_csonthejas_gyumolccsel.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -656,7 +719,7 @@ export class RecipeMockService {
       name: "Pekándiós csirkesaláta",
       id: 33,
       category: "Saláta",
-      imagePaths: ["../../../assets/salads/Pekandios_csirkesalata.JPG", "../../../assets/salads/Pekandios_csirkesalata.JPG", "../../../assets/salads/Pekandios_csirkesalata.JPG"],
+      imagePaths: ["../../../assets/salads/Pekandios_csirkesalata.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -680,7 +743,7 @@ export class RecipeMockService {
       name: "Almás spenótsaláta",
       id: 34,
       category: "Saláta",
-      imagePaths: ["../../../assets/salads/Almas_spenotsalata.JPG", "../../../assets/salads/Almas_spenotsalata.JPG", "../../../assets/salads/Almas_spenotsalata.JPG"],
+      imagePaths: ["../../../assets/salads/Almas_spenotsalata.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -698,7 +761,7 @@ export class RecipeMockService {
       name: "Citrus- és gránátalma-saláta",
       id: 35,
       category: "Saláta",
-      imagePaths: ["../../../assets/salads/Citrus_és_granatalma_salata.JPG", "../../../assets/salads/Citrus_és_granatalma_salata.JPG", "../../../assets/salads/Citrus_és_granatalma_salata.JPG"],
+      imagePaths: ["../../../assets/salads/Citrus_és_granatalma_salata.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -720,7 +783,7 @@ export class RecipeMockService {
       name: "Waldorf saláta",
       id: 36,
       category: "Saláta",
-      imagePaths: ["../../../assets/salads/Waldorf_salata.JPG", "../../../assets/salads/Waldorf_salata.JPG", "../../../assets/salads/Waldorf_salata.JPG"],
+      imagePaths: ["../../../assets/salads/Waldorf_salata.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -742,7 +805,7 @@ export class RecipeMockService {
       name: "Tojássaláta szendvicsbe",
       id: 37,
       category: "Saláta",
-      imagePaths: ["../../../assets/salads/Tojassalata_szendvicsbe.JPG", "../../../assets/salads/Tojassalata_szendvicsbe.JPG", "../../../assets/salads/Tojassalata_szendvicsbe.JPG"],
+      imagePaths: ["../../../assets/salads/Tojassalata_szendvicsbe.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -762,7 +825,7 @@ export class RecipeMockService {
       name: "Nyári gyümölcssaláta",
       id: 38,
       category: "Saláta",
-      imagePaths: ["../../../assets/salads/Nyari_gyumolcssalata.JPG", "../../../assets/salads/Nyari_gyumolcssalata.JPG", "../../../assets/salads/Nyari_gyumolcssalata.JPG"],
+      imagePaths: ["../../../assets/salads/Nyari_gyumolcssalata.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -791,7 +854,7 @@ export class RecipeMockService {
       name: "Caprese tészta thai bazsalikommal",
       id: 39,
       category: "Saláta",
-      imagePaths: ["../../../assets/salads/Caprese_teszta_thai_bazsalikommal.JPG", "../../../assets/salads/Caprese_teszta_thai_bazsalikommal.JPG", "../../../assets/salads/Caprese_teszta_thai_bazsalikommal.JPG"],
+      imagePaths: ["../../../assets/salads/Caprese_teszta_thai_bazsalikommal.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -814,7 +877,7 @@ export class RecipeMockService {
       name: "Sárgarépa-mazsola saláta",
       id: 40,
       category: "Saláta",
-      imagePaths: ["../../../assets/salads/Sargarepa-mazsola_salata.JPG", "../../../assets/salads/Sargarepa-mazsola_salata.JPG", "../../../assets/salads/Sargarepa-mazsola_salata.JPG"],
+      imagePaths: ["../../../assets/salads/Sargarepa-mazsola_salata.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -859,7 +922,7 @@ export class RecipeMockService {
       name: "Mexikói quinoasaláta",
       id: 42,
       category: "Főétel",
-      imagePaths: ["../../../assets/main_courses/Mexikoi_quinoasalata.JPG", "../../../assets/main_courses/Mexikoi_quinoasalata.JPG", "../../../assets/main_courses/Mexikoi_quinoasalata.JPG"],
+      imagePaths: ["../../../assets/main_courses/Mexikoi_quinoasalata.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -890,7 +953,7 @@ export class RecipeMockService {
       name: "Grillezett lazacsteak pikáns áfonyaszósszal",
       id: 43,
       category: "Főétel",
-      imagePaths: ["../../../assets/main_courses/Grillezett_lazacsteak_pikans_afonyaszosszal.JPG", "../../../assets/main_courses/Grillezett_lazacsteak_pikans_afonyaszosszal.JPG", "../../../assets/main_courses/Grillezett_lazacsteak_pikans_afonyaszosszal.JPG"],
+      imagePaths: ["../../../assets/main_courses/Grillezett_lazacsteak_pikans_afonyaszosszal.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -916,7 +979,7 @@ export class RecipeMockService {
       name: "Grillezett lazac avokádómártással",
       id: 44,
       category: "Főétel",
-      imagePaths: ["../../../assets/main_courses/Grillezett_lazac_avokadomartassal.JPG", "../../../assets/main_courses/Grillezett_lazac_avokadomartassal.JPG", "../../../assets/main_courses/Grillezett_lazac_avokadomartassal.JPG"],
+      imagePaths: ["../../../assets/main_courses/Grillezett_lazac_avokadomartassal.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -940,7 +1003,7 @@ export class RecipeMockService {
       name: "Grillezett tonhal friss tormával",
       id: 45,
       category: "Főétel",
-      imagePaths: ["../../../assets/main_courses/Grillezett_tonhal_friss_tormaval.JPG", "../../../assets/main_courses/Grillezett_tonhal_friss_tormaval.JPG", "../../../assets/main_courses/Grillezett_tonhal_friss_tormaval.JPG"],
+      imagePaths: ["../../../assets/main_courses/Grillezett_tonhal_friss_tormaval.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -964,7 +1027,7 @@ export class RecipeMockService {
       name: "Mézes-fokhagymás sertésszelet",
       id: 46,
       category: "Főétel",
-      imagePaths: ["../../../assets/main_courses/Mezes-fokhagymas_sertesszelet.JPG", "../../../assets/main_courses/Mezes-fokhagymas_sertesszelet.JPG", "../../../assets/main_courses/Mezes-fokhagymas_sertesszelet.JPG"],
+      imagePaths: ["../../../assets/main_courses/Mezes-fokhagymas_sertesszelet.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -984,7 +1047,7 @@ export class RecipeMockService {
       name: "Légkeveréses sütőben sült burgonya",
       id: 47,
       category: "Főétel",
-      imagePaths: ["../../../assets/main_courses/Legkevereses_sutoben_sult_burgonya.JPG", "../../../assets/main_courses/Legkevereses_sutoben_sult_burgonya.JPG", "../../../assets/main_courses/Legkevereses_sutoben_sult_burgonya.JPG"],
+      imagePaths: ["../../../assets/main_courses/Legkevereses_sutoben_sult_burgonya.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -1002,7 +1065,7 @@ export class RecipeMockService {
       name: "Könnyű tonhalragu",
       id: 48,
       category: "Főétel",
-      imagePaths: ["../../../assets/main_courses/Konnyu_tonhalragu.JPG", "../../../assets/main_courses/Konnyu_tonhalragu.JPG", "../../../assets/main_courses/Konnyu_tonhalragu.JPG"],
+      imagePaths: ["../../../assets/main_courses/Konnyu_tonhalragu.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -1022,7 +1085,7 @@ export class RecipeMockService {
       name: "Juhar- és barnacukros zabpehely",
       id: 49,
       category: "Főétel",
-      imagePaths: ["../../../assets/main_courses/Juhar-és_barnacukros_zabpehely.JPG", "../../../assets/main_courses/Juhar-és_barnacukros_zabpehely.JPG", "../../../assets/main_courses/Juhar-és_barnacukros_zabpehely.JPG"],
+      imagePaths: ["../../../assets/main_courses/Juhar-és_barnacukros_zabpehely.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -1040,7 +1103,7 @@ export class RecipeMockService {
       name: "Reggeli rizs Japánból",
       id: 50,
       category: "Főétel",
-      imagePaths: ["../../../assets/main_courses/Reggeli_rizs_Japanbol.JPG", "../../../assets/main_courses/Reggeli_rizs_Japanbol.JPG", "../../../assets/main_courses/Reggeli_rizs_Japanbol.JPG"],
+      imagePaths: ["../../../assets/main_courses/Reggeli_rizs_Japanbol.JPG", this.pics[this.randomNumber(0, this.pics.length - 1)], this.pics[this.randomNumber(0, this.pics.length - 1)]],
       shortDescr: "Rövid leírás a receptről...",
       longDescr: "Hosszú leírás a receptről...",
       ingredients: [
@@ -1071,4 +1134,12 @@ export class RecipeMockService {
   getRecipesByIds(ids: number[]): Observable<Recipe[]> {
     return of(this.recipes.filter(recipe => ids.includes(recipe.id)));
   }
+
+  // https://stackoverflow.com/questions/4959975/generate-random-number-between-two-numbers-in-javascript
+  randomNumber(min: number, max: number): number {
+    let nr = Math.round(Math.random() * (max - min) + min);
+    console.log("randomNumber: ", nr);
+    return nr;
+  }
+
 }
